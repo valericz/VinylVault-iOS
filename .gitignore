@@ -1,0 +1,60 @@
+# ===========================
+# Xcode & macOS
+# ===========================
+.DS_Store
+build/
+DerivedData/
+xcuserdata/
+*.xcuserstate
+*.xcscmblueprint
+*.xccheckout
+*.moved-aside
+*.pbxuser
+*.mode1v3
+*.mode2v3
+
+# ===========================
+# Swift Package Manager
+# ===========================
+Packages/
+Package.resolved
+.swiftpm/
+
+# ===========================
+# CocoaPods
+# ===========================
+Pods/
+
+# ===========================
+# Carthage
+# ===========================
+Carthage/
+Carthage/Build/
+
+# ===========================
+# Fastlane
+# ===========================
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+
+# ===========================
+# Firebase / Secrets / Config
+# ===========================
+GoogleService-Info.plist
+Secrets.plist
+*.env
+Config.swift
+
+# ===========================
+# Misc
+# ===========================
+.idea/
+*.iml
+*.hmap
+*.swp
+*.zip
+*.bak
+*.tmp
+

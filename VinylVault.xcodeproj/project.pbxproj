@@ -1,0 +1,855 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B30517F52EA0C85E004F8923 /* DiscogsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30517F42EA0C85E004F8923 /* DiscogsService.swift */; };
+		B30517F62EA0C85E004F8923 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30517F32EA0C85E004F8923 /* DataManager.swift */; };
+		B30517FC2EA0C8A8004F8923 /* AlbumDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30517F72EA0C8A8004F8923 /* AlbumDetailView.swift */; };
+		B30517FD2EA0C8A8004F8923 /* AlbumImportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30517F82EA0C8A8004F8923 /* AlbumImportView.swift */; };
+		B30517FE2EA0C8A8004F8923 /* CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30517F92EA0C8A8004F8923 /* CollectionView.swift */; };
+		B30517FF2EA0C8A8004F8923 /* DiscogsSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30517FA2EA0C8A8004F8923 /* DiscogsSearchView.swift */; };
+		B30518002EA0C8A8004F8923 /* ManualAddAlbumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30517FB2EA0C8A8004F8923 /* ManualAddAlbumView.swift */; };
+		B30518022EA0C8FA004F8923 /* VinylCollectionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30518012EA0C8FA004F8923 /* VinylCollectionApp.swift */; };
+		B305180A2EA0CAED004F8923 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B30518092EA0CAED004F8923 /* WidgetKit.framework */; };
+		B305180C2EA0CAED004F8923 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B305180B2EA0CAED004F8923 /* SwiftUI.framework */; };
+		B305181B2EA0CAEF004F8923 /* VinylWidgetsExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = B30518072EA0CAED004F8923 /* VinylWidgetsExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B30518232EA0CB8A004F8923 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30517F32EA0C85E004F8923 /* DataManager.swift */; };
+		B3086D7F2EA7C15200AFDA2F /* PriceMonitorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3086D7E2EA7C14F00AFDA2F /* PriceMonitorService.swift */; };
+		B3086D802EA7C15200AFDA2F /* PriceMonitorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3086D7E2EA7C14F00AFDA2F /* PriceMonitorService.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B30517D12EA0C726004F8923 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B30517BB2EA0C724004F8923 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B30517C22EA0C724004F8923;
+			remoteInfo = VinylVault;
+		};
+		B30517DB2EA0C726004F8923 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B30517BB2EA0C724004F8923 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B30517C22EA0C724004F8923;
+			remoteInfo = VinylVault;
+		};
+		B30518192EA0CAEF004F8923 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B30517BB2EA0C724004F8923 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B30518062EA0CAED004F8923;
+			remoteInfo = VinylWidgetsExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B30518202EA0CAEF004F8923 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B305181B2EA0CAEF004F8923 /* VinylWidgetsExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B30517C32EA0C724004F8923 /* VinylVault.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VinylVault.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B30517D02EA0C726004F8923 /* VinylVaultTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VinylVaultTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B30517DA2EA0C726004F8923 /* VinylVaultUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VinylVaultUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B30517F32EA0C85E004F8923 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		B30517F42EA0C85E004F8923 /* DiscogsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscogsService.swift; sourceTree = "<group>"; };
+		B30517F72EA0C8A8004F8923 /* AlbumDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetailView.swift; sourceTree = "<group>"; };
+		B30517F82EA0C8A8004F8923 /* AlbumImportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumImportView.swift; sourceTree = "<group>"; };
+		B30517F92EA0C8A8004F8923 /* CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionView.swift; sourceTree = "<group>"; };
+		B30517FA2EA0C8A8004F8923 /* DiscogsSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscogsSearchView.swift; sourceTree = "<group>"; };
+		B30517FB2EA0C8A8004F8923 /* ManualAddAlbumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManualAddAlbumView.swift; sourceTree = "<group>"; };
+		B30518012EA0C8FA004F8923 /* VinylCollectionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VinylCollectionApp.swift; sourceTree = "<group>"; };
+		B30518072EA0CAED004F8923 /* VinylWidgetsExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = VinylWidgetsExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		B30518092EA0CAED004F8923 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		B305180B2EA0CAED004F8923 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		B30518252EA0CC50004F8923 /* VinylWidgetsExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VinylWidgetsExtension.entitlements; sourceTree = "<group>"; };
+		B3086D7E2EA7C14F00AFDA2F /* PriceMonitorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceMonitorService.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		B305181C2EA0CAEF004F8923 /* Exceptions for "VinylWidgets" folder in "VinylWidgetsExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = B30518062EA0CAED004F8923 /* VinylWidgetsExtension */;
+		};
+		B30518222EA0CB70004F8923 /* Exceptions for "Models" folder in "VinylWidgetsExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				VinylModels.swift,
+			);
+			target = B30518062EA0CAED004F8923 /* VinylWidgetsExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		B30517C52EA0C724004F8923 /* VinylVault */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = VinylVault;
+			sourceTree = "<group>";
+		};
+		B30517D32EA0C726004F8923 /* VinylVaultTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = VinylVaultTests;
+			sourceTree = "<group>";
+		};
+		B30517DD2EA0C726004F8923 /* VinylVaultUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = VinylVaultUITests;
+			sourceTree = "<group>";
+		};
+		B30517ED2EA0C767004F8923 /* Models */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				B30518222EA0CB70004F8923 /* Exceptions for "Models" folder in "VinylWidgetsExtension" target */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B305180D2EA0CAED004F8923 /* VinylWidgets */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				B305181C2EA0CAEF004F8923 /* Exceptions for "VinylWidgets" folder in "VinylWidgetsExtension" target */,
+			);
+			path = VinylWidgets;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B30517C02EA0C724004F8923 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B30517CD2EA0C726004F8923 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B30517D72EA0C726004F8923 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B30518042EA0CAED004F8923 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B305180C2EA0CAED004F8923 /* SwiftUI.framework in Frameworks */,
+				B305180A2EA0CAED004F8923 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B30517BA2EA0C724004F8923 = {
+			isa = PBXGroup;
+			children = (
+				B30518252EA0CC50004F8923 /* VinylWidgetsExtension.entitlements */,
+				B30518012EA0C8FA004F8923 /* VinylCollectionApp.swift */,
+				B30517F02EA0C77F004F8923 /* Widgets */,
+				B30517EF2EA0C775004F8923 /* Views */,
+				B30517EE2EA0C76F004F8923 /* Services */,
+				B30517ED2EA0C767004F8923 /* Models */,
+				B30517C52EA0C724004F8923 /* VinylVault */,
+				B30517D32EA0C726004F8923 /* VinylVaultTests */,
+				B30517DD2EA0C726004F8923 /* VinylVaultUITests */,
+				B305180D2EA0CAED004F8923 /* VinylWidgets */,
+				B30518082EA0CAED004F8923 /* Frameworks */,
+				B30517C42EA0C724004F8923 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B30517C42EA0C724004F8923 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B30517C32EA0C724004F8923 /* VinylVault.app */,
+				B30517D02EA0C726004F8923 /* VinylVaultTests.xctest */,
+				B30517DA2EA0C726004F8923 /* VinylVaultUITests.xctest */,
+				B30518072EA0CAED004F8923 /* VinylWidgetsExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B30517EE2EA0C76F004F8923 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B3086D7E2EA7C14F00AFDA2F /* PriceMonitorService.swift */,
+				B30517F32EA0C85E004F8923 /* DataManager.swift */,
+				B30517F42EA0C85E004F8923 /* DiscogsService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		B30517EF2EA0C775004F8923 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B30517F72EA0C8A8004F8923 /* AlbumDetailView.swift */,
+				B30517F82EA0C8A8004F8923 /* AlbumImportView.swift */,
+				B30517F92EA0C8A8004F8923 /* CollectionView.swift */,
+				B30517FA2EA0C8A8004F8923 /* DiscogsSearchView.swift */,
+				B30517FB2EA0C8A8004F8923 /* ManualAddAlbumView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B30517F02EA0C77F004F8923 /* Widgets */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Widgets;
+			sourceTree = "<group>";
+		};
+		B30518082EA0CAED004F8923 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B30518092EA0CAED004F8923 /* WidgetKit.framework */,
+				B305180B2EA0CAED004F8923 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B30517C22EA0C724004F8923 /* VinylVault */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B30517E42EA0C726004F8923 /* Build configuration list for PBXNativeTarget "VinylVault" */;
+			buildPhases = (
+				B30517BF2EA0C724004F8923 /* Sources */,
+				B30517C02EA0C724004F8923 /* Frameworks */,
+				B30517C12EA0C724004F8923 /* Resources */,
+				B30518202EA0CAEF004F8923 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B305181A2EA0CAEF004F8923 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				B30517C52EA0C724004F8923 /* VinylVault */,
+				B30517ED2EA0C767004F8923 /* Models */,
+			);
+			name = VinylVault;
+			packageProductDependencies = (
+			);
+			productName = VinylVault;
+			productReference = B30517C32EA0C724004F8923 /* VinylVault.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B30517CF2EA0C726004F8923 /* VinylVaultTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B30517E72EA0C726004F8923 /* Build configuration list for PBXNativeTarget "VinylVaultTests" */;
+			buildPhases = (
+				B30517CC2EA0C726004F8923 /* Sources */,
+				B30517CD2EA0C726004F8923 /* Frameworks */,
+				B30517CE2EA0C726004F8923 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B30517D22EA0C726004F8923 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				B30517D32EA0C726004F8923 /* VinylVaultTests */,
+			);
+			name = VinylVaultTests;
+			packageProductDependencies = (
+			);
+			productName = VinylVaultTests;
+			productReference = B30517D02EA0C726004F8923 /* VinylVaultTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B30517D92EA0C726004F8923 /* VinylVaultUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B30517EA2EA0C726004F8923 /* Build configuration list for PBXNativeTarget "VinylVaultUITests" */;
+			buildPhases = (
+				B30517D62EA0C726004F8923 /* Sources */,
+				B30517D72EA0C726004F8923 /* Frameworks */,
+				B30517D82EA0C726004F8923 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B30517DC2EA0C726004F8923 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				B30517DD2EA0C726004F8923 /* VinylVaultUITests */,
+			);
+			name = VinylVaultUITests;
+			packageProductDependencies = (
+			);
+			productName = VinylVaultUITests;
+			productReference = B30517DA2EA0C726004F8923 /* VinylVaultUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		B30518062EA0CAED004F8923 /* VinylWidgetsExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B305181D2EA0CAEF004F8923 /* Build configuration list for PBXNativeTarget "VinylWidgetsExtension" */;
+			buildPhases = (
+				B30518032EA0CAED004F8923 /* Sources */,
+				B30518042EA0CAED004F8923 /* Frameworks */,
+				B30518052EA0CAED004F8923 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				B305180D2EA0CAED004F8923 /* VinylWidgets */,
+			);
+			name = VinylWidgetsExtension;
+			packageProductDependencies = (
+			);
+			productName = VinylWidgetsExtension;
+			productReference = B30518072EA0CAED004F8923 /* VinylWidgetsExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B30517BB2EA0C724004F8923 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2600;
+				LastUpgradeCheck = 2600;
+				TargetAttributes = {
+					B30517C22EA0C724004F8923 = {
+						CreatedOnToolsVersion = 26.0.1;
+					};
+					B30517CF2EA0C726004F8923 = {
+						CreatedOnToolsVersion = 26.0.1;
+						TestTargetID = B30517C22EA0C724004F8923;
+					};
+					B30517D92EA0C726004F8923 = {
+						CreatedOnToolsVersion = 26.0.1;
+						TestTargetID = B30517C22EA0C724004F8923;
+					};
+					B30518062EA0CAED004F8923 = {
+						CreatedOnToolsVersion = 26.0.1;
+					};
+				};
+			};
+			buildConfigurationList = B30517BE2EA0C724004F8923 /* Build configuration list for PBXProject "VinylVault" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B30517BA2EA0C724004F8923;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = B30517C42EA0C724004F8923 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B30517C22EA0C724004F8923 /* VinylVault */,
+				B30517CF2EA0C726004F8923 /* VinylVaultTests */,
+				B30517D92EA0C726004F8923 /* VinylVaultUITests */,
+				B30518062EA0CAED004F8923 /* VinylWidgetsExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B30517C12EA0C724004F8923 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B30517CE2EA0C726004F8923 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B30517D82EA0C726004F8923 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B30518052EA0CAED004F8923 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B30517BF2EA0C724004F8923 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B30517F52EA0C85E004F8923 /* DiscogsService.swift in Sources */,
+				B30518022EA0C8FA004F8923 /* VinylCollectionApp.swift in Sources */,
+				B30517F62EA0C85E004F8923 /* DataManager.swift in Sources */,
+				B30517FC2EA0C8A8004F8923 /* AlbumDetailView.swift in Sources */,
+				B30517FD2EA0C8A8004F8923 /* AlbumImportView.swift in Sources */,
+				B30517FE2EA0C8A8004F8923 /* CollectionView.swift in Sources */,
+				B30517FF2EA0C8A8004F8923 /* DiscogsSearchView.swift in Sources */,
+				B30518002EA0C8A8004F8923 /* ManualAddAlbumView.swift in Sources */,
+				B3086D802EA7C15200AFDA2F /* PriceMonitorService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B30517CC2EA0C726004F8923 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B30517D62EA0C726004F8923 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B30518032EA0CAED004F8923 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3086D7F2EA7C15200AFDA2F /* PriceMonitorService.swift in Sources */,
+				B30518232EA0CB8A004F8923 /* DataManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B30517D22EA0C726004F8923 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B30517C22EA0C724004F8923 /* VinylVault */;
+			targetProxy = B30517D12EA0C726004F8923 /* PBXContainerItemProxy */;
+		};
+		B30517DC2EA0C726004F8923 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B30517C22EA0C724004F8923 /* VinylVault */;
+			targetProxy = B30517DB2EA0C726004F8923 /* PBXContainerItemProxy */;
+		};
+		B305181A2EA0CAEF004F8923 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B30518062EA0CAED004F8923 /* VinylWidgetsExtension */;
+			targetProxy = B30518192EA0CAEF004F8923 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B30517E22EA0C726004F8923 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = SX3YRL7T7N;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B30517E32EA0C726004F8923 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = SX3YRL7T7N;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B30517E52EA0C726004F8923 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = VinylVault/VinylVault.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SX3YRL7T7N;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.valeriez.VinylVault;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B30517E62EA0C726004F8923 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = VinylVault/VinylVault.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SX3YRL7T7N;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.valeriez.VinylVault;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B30517E82EA0C726004F8923 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SX3YRL7T7N;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.valeriez.VinylVaultTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VinylVault.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/VinylVault";
+			};
+			name = Debug;
+		};
+		B30517E92EA0C726004F8923 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SX3YRL7T7N;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.valeriez.VinylVaultTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VinylVault.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/VinylVault";
+			};
+			name = Release;
+		};
+		B30517EB2EA0C726004F8923 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SX3YRL7T7N;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.valeriez.VinylVaultUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VinylVault;
+			};
+			name = Debug;
+		};
+		B30517EC2EA0C726004F8923 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SX3YRL7T7N;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.valeriez.VinylVaultUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VinylVault;
+			};
+			name = Release;
+		};
+		B305181E2EA0CAEF004F8923 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = VinylWidgetsExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SX3YRL7T7N;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VinylWidgets/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = VinylWidgets;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.valeriez.VinylVault.VinylWidgets;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B305181F2EA0CAEF004F8923 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = VinylWidgetsExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SX3YRL7T7N;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VinylWidgets/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = VinylWidgets;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.valeriez.VinylVault.VinylWidgets;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B30517BE2EA0C724004F8923 /* Build configuration list for PBXProject "VinylVault" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B30517E22EA0C726004F8923 /* Debug */,
+				B30517E32EA0C726004F8923 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B30517E42EA0C726004F8923 /* Build configuration list for PBXNativeTarget "VinylVault" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B30517E52EA0C726004F8923 /* Debug */,
+				B30517E62EA0C726004F8923 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B30517E72EA0C726004F8923 /* Build configuration list for PBXNativeTarget "VinylVaultTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B30517E82EA0C726004F8923 /* Debug */,
+				B30517E92EA0C726004F8923 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B30517EA2EA0C726004F8923 /* Build configuration list for PBXNativeTarget "VinylVaultUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B30517EB2EA0C726004F8923 /* Debug */,
+				B30517EC2EA0C726004F8923 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B305181D2EA0CAEF004F8923 /* Build configuration list for PBXNativeTarget "VinylWidgetsExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B305181E2EA0CAEF004F8923 /* Debug */,
+				B305181F2EA0CAEF004F8923 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B30517BB2EA0C724004F8923 /* Project object */;
+}
