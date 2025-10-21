@@ -4,24 +4,38 @@ import SwiftUI
 @main
 struct VinylVaultApp: App {
     init() {
-            // 🔍 App 启动时强制保存数据
-            print("🚀 App launching...")
-            print("🚀 App Group ID: \(AppGroup.identifier)")
-            
-            let albums = DataManager.shared.albums
-            print("🚀 App has \(albums.count) albums")
-            
-            // 强制保存一次
-            AppGroup.saveAlbums(albums)
-            
-            // 验证保存
-            let loaded = AppGroup.loadAlbums()
-            print("🚀 Verified: \(loaded.count) albums saved to App Group")
-        }
+        print("🚀 App launching...")
+        print("🚀 App Group ID: \(AppGroup.identifier)")
+        
+        let albums = DataManager.shared.albums
+        print("🚀 App has \(albums.count) albums")
+        
+        AppGroup.saveAlbums(albums)
+        
+        let loaded = AppGroup.loadAlbums()
+        print("🚀 Verified: \(loaded.count) albums saved to App Group")
+        
+        requestNotificationPermission()
+    }
+    
     var body: some Scene {
         WindowGroup {
             MainTabView()
                 .preferredColorScheme(.dark)
+        }
+    }
+    
+    private func requestNotificationPermission() {
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) { granted, error in
+            if granted {
+                print("✅ Notification permission granted")
+            } else {
+                print("❌ Notification permission denied")
+            }
+            
+            if let error = error {
+                print("❌ Notification error: \(error)")
+            }
         }
     }
 }
@@ -32,6 +46,11 @@ struct MainTabView: View {
             CollectionView()
                 .tabItem {
                     Label("Collection", systemImage: "square.grid.2x2")
+                }
+            
+            WishlistView()
+                .tabItem {
+                    Label("Wishlist", systemImage: "heart.text.square")
                 }
             
             StatisticsView()

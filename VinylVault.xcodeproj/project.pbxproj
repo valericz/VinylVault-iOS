@@ -21,6 +21,9 @@
 		B30518232EA0CB8A004F8923 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30517F32EA0C85E004F8923 /* DataManager.swift */; };
 		B3086D7F2EA7C15200AFDA2F /* PriceMonitorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3086D7E2EA7C14F00AFDA2F /* PriceMonitorService.swift */; };
 		B3086D802EA7C15200AFDA2F /* PriceMonitorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3086D7E2EA7C14F00AFDA2F /* PriceMonitorService.swift */; };
+		B3086D962EA7C6D700AFDA2F /* WishlistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3086D952EA7C6D600AFDA2F /* WishlistView.swift */; };
+		B3086D982EA7C6FE00AFDA2F /* WishlistItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3086D972EA7C6FD00AFDA2F /* WishlistItemRow.swift */; };
+		B3086D9A2EA7C78D00AFDA2F /* AddToWishlistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3086D992EA7C78C00AFDA2F /* AddToWishlistView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +81,9 @@
 		B305180B2EA0CAED004F8923 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		B30518252EA0CC50004F8923 /* VinylWidgetsExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VinylWidgetsExtension.entitlements; sourceTree = "<group>"; };
 		B3086D7E2EA7C14F00AFDA2F /* PriceMonitorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceMonitorService.swift; sourceTree = "<group>"; };
+		B3086D952EA7C6D600AFDA2F /* WishlistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishlistView.swift; sourceTree = "<group>"; };
+		B3086D972EA7C6FD00AFDA2F /* WishlistItemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishlistItemRow.swift; sourceTree = "<group>"; };
+		B3086D992EA7C78C00AFDA2F /* AddToWishlistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToWishlistView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -207,6 +213,9 @@
 		B30517EF2EA0C775004F8923 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B3086D992EA7C78C00AFDA2F /* AddToWishlistView.swift */,
+				B3086D972EA7C6FD00AFDA2F /* WishlistItemRow.swift */,
+				B3086D952EA7C6D600AFDA2F /* WishlistView.swift */,
 				B30517F72EA0C8A8004F8923 /* AlbumDetailView.swift */,
 				B30517F82EA0C8A8004F8923 /* AlbumImportView.swift */,
 				B30517F92EA0C8A8004F8923 /* CollectionView.swift */,
@@ -416,8 +425,11 @@
 				B30518022EA0C8FA004F8923 /* VinylCollectionApp.swift in Sources */,
 				B30517F62EA0C85E004F8923 /* DataManager.swift in Sources */,
 				B30517FC2EA0C8A8004F8923 /* AlbumDetailView.swift in Sources */,
+				B3086D982EA7C6FE00AFDA2F /* WishlistItemRow.swift in Sources */,
 				B30517FD2EA0C8A8004F8923 /* AlbumImportView.swift in Sources */,
+				B3086D962EA7C6D700AFDA2F /* WishlistView.swift in Sources */,
 				B30517FE2EA0C8A8004F8923 /* CollectionView.swift in Sources */,
+				B3086D9A2EA7C78D00AFDA2F /* AddToWishlistView.swift in Sources */,
 				B30517FF2EA0C8A8004F8923 /* DiscogsSearchView.swift in Sources */,
 				B30518002EA0C8A8004F8923 /* ManualAddAlbumView.swift in Sources */,
 				B3086D802EA7C15200AFDA2F /* PriceMonitorService.swift in Sources */,
