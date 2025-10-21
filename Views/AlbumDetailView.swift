@@ -12,7 +12,7 @@ struct AlbumDetailView: View {
     
     var body: some View {
         ScrollView {
-            VStack(spacing: 0) {
+            VStack(spacing: 20) { // 统一的竖直间距
                 // Header with Album Cover
                 ZStack(alignment: .top) {
                     Rectangle()
@@ -64,32 +64,29 @@ struct AlbumDetailView: View {
                     }
                     .padding(.top, 40)
                 }
+                .padding(.bottom, 20) // 让 header 和下方内容有呼吸感
                 
-                // Details Section
-                VStack(spacing: 24) {
-                    // Rating Section
-                    VStack(spacing: 12) {
-                        Text("My Rating")
-                            .font(.system(size: 16, weight: .semibold))
-                            .foregroundColor(.white.opacity(0.8))
-                        
-                        HStack(spacing: 8) {
-                            ForEach(0..<5) { index in
-                                Image(systemName: Double(index) < album.rating ? "star.fill" : "star")
-                                    .font(.system(size: 24))
-                                    .foregroundColor(.yellow)
-                            }
+                // Details Section - Rating
+                VStack(spacing: 12) {
+                    Text("My Rating")
+                        .font(.system(size: 16, weight: .semibold))
+                        .foregroundColor(.white.opacity(0.8))
+                    
+                    HStack(spacing: 8) {
+                        ForEach(0..<5) { index in
+                            Image(systemName: Double(index) < album.rating ? "star.fill" : "star")
+                                .font(.system(size: 24))
+                                .foregroundColor(.yellow)
                         }
-                        
-                        Text(String(format: "%.1f / 5.0", album.rating))
-                            .font(.system(size: 18, weight: .bold))
-                            .foregroundColor(.white)
-                        
-                        
                     }
+                    
+                    Text(String(format: "%.1f / 5.0", album.rating))
+                        .font(.system(size: 18, weight: .bold))
+                        .foregroundColor(.white)
                 }
                 .frame(maxWidth: .infinity)
                 .padding(.vertical, 20)
+                .padding(.horizontal, 16) // 横向内边距避免贴边
                 .background(
                     RoundedRectangle(cornerRadius: 16)
                         .fill(Color.white.opacity(0.1))
@@ -100,6 +97,7 @@ struct AlbumDetailView: View {
                     InfoCard(icon: "record.circle", title: "Condition", value: album.condition.shortName)
                     InfoCard(icon: "calendar", title: "Added", value: album.dateAdded.formatted(.dateTime.month().day()))
                 }
+                .padding(.horizontal, 16)
                 
                 // Personal Review
                 if !album.personalReview.isEmpty {
@@ -119,6 +117,7 @@ struct AlbumDetailView: View {
                                     .fill(Color.white.opacity(0.08))
                             )
                     }
+                    .padding(.horizontal, 16)
                 }
                 
                 // Track Listing
@@ -131,6 +130,9 @@ struct AlbumDetailView: View {
                         VStack(spacing: 0) {
                             ForEach(album.trackListing) { track in
                                 TrackRow(track: track)
+                                if track.id != album.trackListing.last?.id {
+                                    Divider().overlay(Color.white.opacity(0.06))
+                                }
                             }
                         }
                         .background(
@@ -138,6 +140,7 @@ struct AlbumDetailView: View {
                                 .fill(Color.white.opacity(0.08))
                         )
                     }
+                    .padding(.horizontal, 16)
                 }
                 
                 // Additional Details
@@ -162,6 +165,7 @@ struct AlbumDetailView: View {
                                 .fill(Color.white.opacity(0.08))
                         )
                     }
+                    .padding(.horizontal, 16)
                 }
                 
                 // Purchase Info
@@ -186,6 +190,7 @@ struct AlbumDetailView: View {
                                 .fill(Color.white.opacity(0.08))
                         )
                     }
+                    .padding(.horizontal, 16)
                 }
                 
                 // Action Buttons
@@ -220,9 +225,12 @@ struct AlbumDetailView: View {
                             .cornerRadius(12)
                     }
                 }
+                .padding(.horizontal, 16)
             }
-            .padding()
+            .padding(.vertical, 20)
         }
+        // iOS 17+ 可用：统一内容边距（有它可以删掉上面很多 .padding(.horizontal, 16)）
+        .applyContentMarginsIfAvailable()
         
         .background(Color(hex: "1a1a1a"))
         .navigationBarTitleDisplayMode(.inline)
@@ -246,7 +254,6 @@ struct AlbumDetailView: View {
             Text("Are you sure you want to delete \(album.title)?")
         }
     }
-    
     
     // MARK: - Info Card
     struct InfoCard: View {
@@ -282,6 +289,12 @@ struct AlbumDetailView: View {
     struct TrackRow: View {
         let track: Track
         
+        // 从 position 推断 Side（如 "A1" -> "Side A"）
+        private var sideText: String {
+            guard let first = track.position.first else { return "" }
+            return "Side \(first)"
+        }
+        
         var body: some View {
             HStack {
                 VStack(alignment: .leading, spacing: 4) {
@@ -289,7 +302,7 @@ struct AlbumDetailView: View {
                         .font(.system(size: 14, weight: .medium))
                         .foregroundColor(.white)
                     
-                    Text("\(track.position) • \(track.side)")
+                    Text("\(track.position) • \(sideText)")
                         .font(.system(size: 11))
                         .foregroundColor(.white.opacity(0.5))
                 }
@@ -328,6 +341,19 @@ struct AlbumDetailView: View {
         }
     }
 }
+
+// iOS 17+ 的统一内容边距封装（可选）
+private extension View {
+    @ViewBuilder
+    func applyContentMarginsIfAvailable() -> some View {
+        if #available(iOS 17.0, *) {
+            self.contentMargins(.horizontal, 16, for: .scrollContent)
+        } else {
+            self
+        }
+    }
+}
+
 #Preview {
     NavigationView {
         AlbumDetailView(album: VinylAlbum.sampleData[0])

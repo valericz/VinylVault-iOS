@@ -255,42 +255,7 @@ extension VinylAlbum {
             label: "Harvest",
             country: "UK"
         ),
-        VinylAlbum(
-            title: "Blue",
-            artist: "Joni Mitchell",
-            releaseYear: 1971,
-            genre: "Folk",
-            rating: 4.7,
-            personalReview: "Emotionally raw and beautifully intimate.",
-            condition: .veryGood,
-            isFavorite: true,
-            label: "Reprise",
-            country: "US"
-        ),
-        VinylAlbum(
-            title: "Rumours",
-            artist: "Fleetwood Mac",
-            releaseYear: 1977,
-            genre: "Rock",
-            rating: 4.8,
-            personalReview: "Every track is a hit. The analog sound is incredible.",
-            condition: .mint,
-            isFavorite: false,
-            label: "Warner Bros",
-            country: "US"
-        ),
-        VinylAlbum(
-            title: "Thriller",
-            artist: "Michael Jackson",
-            releaseYear: 1982,
-            genre: "Pop",
-            rating: 4.9,
-            personalReview: "The King of Pop at his peak. A must-have in any collection.",
-            condition: .nearMint,
-            isFavorite: false,
-            label: "Epic",
-            country: "US"
-        )
+      
     ]
 }
 
