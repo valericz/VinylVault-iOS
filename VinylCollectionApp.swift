@@ -47,6 +47,10 @@ struct MainTabView: View {
                 .tabItem {
                     Label("Collection", systemImage: "square.grid.2x2")
                 }
+            StoresView()
+                            .tabItem {
+                                Label("Stores", systemImage: "map.fill")
+                            }
             
             WishlistView()
                 .tabItem {

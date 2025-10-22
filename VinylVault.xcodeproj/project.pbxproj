@@ -24,6 +24,12 @@
 		B3086D962EA7C6D700AFDA2F /* WishlistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3086D952EA7C6D600AFDA2F /* WishlistView.swift */; };
 		B3086D982EA7C6FE00AFDA2F /* WishlistItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3086D972EA7C6FD00AFDA2F /* WishlistItemRow.swift */; };
 		B3086D9A2EA7C78D00AFDA2F /* AddToWishlistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3086D992EA7C78C00AFDA2F /* AddToWishlistView.swift */; };
+		B3086DC82EA7F55800AFDA2F /* stores_sydney.json in Sources */ = {isa = PBXBuildFile; fileRef = B3086DC72EA7F55700AFDA2F /* stores_sydney.json */; };
+		B3086DCD2EA7F7D900AFDA2F /* LocationNotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3086DCC2EA7F7D500AFDA2F /* LocationNotificationService.swift */; };
+		B3086DCE2EA7F7D900AFDA2F /* LocationNotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3086DCC2EA7F7D500AFDA2F /* LocationNotificationService.swift */; };
+		B3086DD22EA7FABC00AFDA2F /* StoresView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3086DD12EA7FAB900AFDA2F /* StoresView.swift */; };
+		B3086DD42EA7FD0300AFDA2F /* StoreCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3086DD32EA7FD0200AFDA2F /* StoreCard.swift */; };
+		B3086DD62EA7FD1500AFDA2F /* StoreDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3086DD52EA7FD1400AFDA2F /* StoreDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +90,11 @@
 		B3086D952EA7C6D600AFDA2F /* WishlistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishlistView.swift; sourceTree = "<group>"; };
 		B3086D972EA7C6FD00AFDA2F /* WishlistItemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishlistItemRow.swift; sourceTree = "<group>"; };
 		B3086D992EA7C78C00AFDA2F /* AddToWishlistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToWishlistView.swift; sourceTree = "<group>"; };
+		B3086DC72EA7F55700AFDA2F /* stores_sydney.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = stores_sydney.json; sourceTree = "<group>"; };
+		B3086DCC2EA7F7D500AFDA2F /* LocationNotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationNotificationService.swift; sourceTree = "<group>"; };
+		B3086DD12EA7FAB900AFDA2F /* StoresView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoresView.swift; sourceTree = "<group>"; };
+		B3086DD32EA7FD0200AFDA2F /* StoreCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreCard.swift; sourceTree = "<group>"; };
+		B3086DD52EA7FD1400AFDA2F /* StoreDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -97,15 +108,26 @@
 		B30518222EA0CB70004F8923 /* Exceptions for "Models" folder in "VinylWidgetsExtension" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
+				Store.swift,
 				VinylModels.swift,
 			);
 			target = B30518062EA0CAED004F8923 /* VinylWidgetsExtension */;
+		};
+		B3086DD02EA7F9D300AFDA2F /* Exceptions for "VinylVault" folder in "VinylVault" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = B30517C22EA0C724004F8923 /* VinylVault */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		B30517C52EA0C724004F8923 /* VinylVault */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				B3086DD02EA7F9D300AFDA2F /* Exceptions for "VinylVault" folder in "VinylVault" target */,
+			);
 			path = VinylVault;
 			sourceTree = "<group>";
 		};
@@ -174,6 +196,7 @@
 		B30517BA2EA0C724004F8923 = {
 			isa = PBXGroup;
 			children = (
+				B3086DC72EA7F55700AFDA2F /* stores_sydney.json */,
 				B30518252EA0CC50004F8923 /* VinylWidgetsExtension.entitlements */,
 				B30518012EA0C8FA004F8923 /* VinylCollectionApp.swift */,
 				B30517F02EA0C77F004F8923 /* Widgets */,
@@ -203,6 +226,7 @@
 		B30517EE2EA0C76F004F8923 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				B3086DCC2EA7F7D500AFDA2F /* LocationNotificationService.swift */,
 				B3086D7E2EA7C14F00AFDA2F /* PriceMonitorService.swift */,
 				B30517F32EA0C85E004F8923 /* DataManager.swift */,
 				B30517F42EA0C85E004F8923 /* DiscogsService.swift */,
@@ -213,6 +237,9 @@
 		B30517EF2EA0C775004F8923 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B3086DD52EA7FD1400AFDA2F /* StoreDetailView.swift */,
+				B3086DD32EA7FD0200AFDA2F /* StoreCard.swift */,
+				B3086DD12EA7FAB900AFDA2F /* StoresView.swift */,
 				B3086D992EA7C78C00AFDA2F /* AddToWishlistView.swift */,
 				B3086D972EA7C6FD00AFDA2F /* WishlistItemRow.swift */,
 				B3086D952EA7C6D600AFDA2F /* WishlistView.swift */,
@@ -421,11 +448,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3086DD22EA7FABC00AFDA2F /* StoresView.swift in Sources */,
 				B30517F52EA0C85E004F8923 /* DiscogsService.swift in Sources */,
+				B3086DD62EA7FD1500AFDA2F /* StoreDetailView.swift in Sources */,
 				B30518022EA0C8FA004F8923 /* VinylCollectionApp.swift in Sources */,
+				B3086DD42EA7FD0300AFDA2F /* StoreCard.swift in Sources */,
 				B30517F62EA0C85E004F8923 /* DataManager.swift in Sources */,
 				B30517FC2EA0C8A8004F8923 /* AlbumDetailView.swift in Sources */,
+				B3086DC82EA7F55800AFDA2F /* stores_sydney.json in Sources */,
 				B3086D982EA7C6FE00AFDA2F /* WishlistItemRow.swift in Sources */,
+				B3086DCE2EA7F7D900AFDA2F /* LocationNotificationService.swift in Sources */,
 				B30517FD2EA0C8A8004F8923 /* AlbumImportView.swift in Sources */,
 				B3086D962EA7C6D700AFDA2F /* WishlistView.swift in Sources */,
 				B30517FE2EA0C8A8004F8923 /* CollectionView.swift in Sources */,
@@ -454,6 +486,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3086DCD2EA7F7D900AFDA2F /* LocationNotificationService.swift in Sources */,
 				B3086D7F2EA7C15200AFDA2F /* PriceMonitorService.swift in Sources */,
 				B30518232EA0CB8A004F8923 /* DataManager.swift in Sources */,
 			);
@@ -612,6 +645,10 @@
 				DEVELOPMENT_TEAM = SX3YRL7T7N;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VinylVault/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "VinylVault needs your location to send notifications when you're near record stores, even when the app is in the background";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "VinylVault needs your location to notify you when you're near record stores";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -645,6 +682,10 @@
 				DEVELOPMENT_TEAM = SX3YRL7T7N;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VinylVault/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "VinylVault needs your location to send notifications when you're near record stores, even when the app is in the background";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "VinylVault needs your location to notify you when you're near record stores";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

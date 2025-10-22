@@ -1,0 +1,122 @@
+//
+//  stores_sydney.json
+//  stores_sydney.json
+//  VinylVault
+//
+//  Created by WEIHUA ZHANG on 22/10/2025.
+//
+
+[
+  {
+    "id": "red-eye-records",
+    "name": "Red Eye Records",
+    "address": "66 King St",
+    "suburb": "Sydney",
+    "postcode": "2000",
+    "lat": -33.8688,
+    "lng": 151.2093,
+    "phone": "(02) 9233 8828",
+    "hours": "Mon-Sat 10am-6pm, Sun 11am-5pm",
+    "description": "Sydney's iconic independent record store since 2003. Specializing in new and second-hand vinyl across all genres.",
+    "website": "https://redeyerecords.com.au",
+    "instagram": "@redeyerecords",
+    "specialty": ["Indie", "Rock", "Electronic", "Jazz"],
+    "logoFileName": null
+  },
+  {
+    "id": "basement-discs",
+    "name": "Basement Discs",
+    "address": "ShopE04/377 Sussex St",
+    "suburb": "Sydney",
+    "postcode": "2000",
+    "lat": -33.8731,
+    "lng": 151.2042,
+    "phone": "(02) 9283 1088",
+    "hours": "Mon-Fri 11am-6pm, Sat 11am-5pm",
+    "description": "Underground vinyl paradise in the CBD. Extensive collection of rare and collectible records.",
+    "website": null,
+    "instagram": "@basementdiscs",
+    "specialty": ["Rare Vinyl", "Collectibles", "Rock", "Soul"],
+    "logoFileName": null
+  },
+  {
+    "id": "berkelouw-paddington",
+    "name": "Berkelouw Books",
+    "address": "19 Oxford St",
+    "suburb": "Paddington",
+    "postcode": "2021",
+    "lat": -33.8848,
+    "lng": 151.2265,
+    "phone": "(02) 9360 3200",
+    "hours": "Daily 10am-6pm",
+    "description": "Beautiful bookstore with a curated selection of vinyl records. Perfect for a Sunday afternoon browse.",
+    "website": "https://berkelouw.com.au",
+    "instagram": "@berkelouwbooks",
+    "specialty": ["Classical", "Jazz", "Soundtrack", "World"],
+    "logoFileName": null
+  },
+  {
+    "id": "egg-records",
+    "name": "Egg Records Newtown",
+    "address": "3/166 King St",
+    "suburb": "Newtown",
+    "postcode": "2042",
+    "lat": -33.8964,
+    "lng": 151.1814,
+    "phone": "(02) 9550 3301",
+    "hours": "Daily 11am-7pm",
+    "description": "Newtown's legendary vinyl destination. Massive selection of new releases and second-hand gems.",
+    "website": "https://eggrecords.com",
+    "instagram": "@eggrecordsnewtown",
+    "specialty": ["Punk", "Metal", "Alternative", "Hip-Hop"],
+    "logoFileName": null
+  },
+  {
+    "id": "sonic-sherpa",
+    "name": "Sonic Sherpa",
+    "address": "34 Oxford St",
+    "suburb": "Darlinghurst",
+    "postcode": "2010",
+    "lat": -33.8774,
+    "lng": 151.2187,
+    "phone": "(02) 9331 3222",
+    "hours": "Daily 11am-7pm",
+    "description": "Electronic and dance music specialists. DJ equipment and rare imports.",
+    "website": "https://sonicsherpa.com",
+    "instagram": "@sonicsherpa",
+    "specialty": ["Electronic", "House", "Techno", "Ambient"],
+    "logoFileName": null
+  },
+  {
+    "id": "repressed-records",
+    "name": "Repressed Records",
+    "address": "401 King St",
+    "suburb": "Newtown",
+    "postcode": "2042",
+    "lat": -33.8982,
+    "lng": 151.1803,
+    "phone": null,
+    "hours": "Tue-Sun 11am-6pm",
+    "description": "Newtown's newest vinyl haven. Focus on Australian artists and limited editions.",
+    "website": null,
+    "instagram": "@repressedrecords",
+    "specialty": ["Australian", "Indie", "Limited Editions"],
+    "logoFileName": null
+  },
+  {
+    "id": "folkways-music",
+    "name": "Folkways Music",
+    "address": "282 Oxford St",
+    "suburb": "Paddington",
+    "postcode": "2021",
+    "lat": -33.8863,
+    "lng": 151.2289,
+    "phone": "(02) 9361 3980",
+    "hours": "Mon-Sat 10am-6pm, Sun 12pm-5pm",
+    "description": "Folk, acoustic, and world music specialists since 1976. Knowledgeable staff and listening stations.",
+    "website": "https://folkways.com.au",
+    "instagram": "@folkwaysmusic",
+    "specialty": ["Folk", "Acoustic", "World", "Blues"],
+    "logoFileName": null
+  }
+]
